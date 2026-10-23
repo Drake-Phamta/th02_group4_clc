@@ -33,7 +33,7 @@
 - `res/layout/activity_stub.xml`, `res/layout/item_stub_action.xml`, các file `strings_<module>.xml` rỗng cho từng thành viên
 
 ### Chất lượng & cộng tác
-- Test (JUnit + Robolectric) — **đang bổ sung**: DAO và nghiệp vụ, `SessionManager`, `DateUtils`, mở thử từng màn hình với đúng vai trò
+- Test (JUnit + Robolectric, `app/src/test`): `CoreUtilsTest`, `DatabaseTest` (4 bảng, DAO, chặn đặt hàng hết hạn), `SessionManagerTest`, `OrderManagementActivityTest`, `ScreenSmokeTest` (mọi màn hình mở được với đúng vai trò, sai vai trò bị chặn)
 - `.github/workflows/android-ci.yml`: build và test cho mọi push hoặc PR vào `main`
 - `.github/CODEOWNERS`, `.github/pull_request_template.md`
 - Tài liệu: `README.md`, `docs/SPEC.md`, `docs/PHAN_CONG.md`, `docs/tasks/*`

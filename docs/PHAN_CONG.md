@@ -80,6 +80,6 @@ Do các nhánh sửa những file **hoàn toàn tách biệt**, thực tế merg
 - [ ] Tên string, layout, drawable mới có tiền tố module
 - [ ] Activity kế thừa `BaseActivity`, gọi `requireRole(...)` đầu `onCreate`
 - [ ] Dùng `DateUtils` / `FormatUtils` / `Badges` cho ngày, giá tiền và badge
-- [ ] `gradlew.bat assembleDebug testDebugUnitTest` → **BUILD SUCCESSFUL**
+- [ ] `gradlew.bat assembleDebug testDebugUnitTest` → **BUILD SUCCESSFUL** (trong đó `ScreenSmokeTest` mở thử màn hình của bạn: crash khi mở hoặc thiếu `requireRole` sẽ làm CI đỏ)
 - [ ] Đã chạy app thật hoặc máy ảo, test bằng tài khoản demo (`admin/admin123`, `customer/customer123`)
 - [ ] Đã `git pull origin main` trước khi mở PR; CI "Android CI" xanh

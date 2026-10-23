@@ -40,7 +40,7 @@ Các chức năng bắt buộc: đăng nhập 2 vai trò, lưu tài khoản đă
 - **UI**: AppCompat, Material Components (theme `Theme.FruitShop`), RecyclerView, ConstraintLayout
 - **Dữ liệu**: SQLite qua `SQLiteOpenHelper`; mật khẩu băm **SHA-256**
 - **Lưu đăng nhập**: SharedPreferences (`SessionManager`)
-- **Test**: JUnit 4 + Robolectric (đang bổ sung: DAO, SharedPreferences, mở thử từng màn hình)
+- **Test** (`app/src/test`): JUnit 4 + Robolectric. Kiểm tra lược đồ 4 bảng, DAO và quy tắc đặt hàng, SharedPreferences, module đơn hàng, và mở thử mọi màn hình theo đúng vai trò (`ScreenSmokeTest`)
 - **CI**: GitHub Actions `Android CI`, tự build và chạy test cho mỗi push hoặc Pull Request vào `main`
 
 ## 4. Kiến trúc & cấu trúc thư mục
