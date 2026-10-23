@@ -64,11 +64,13 @@ public class AccountDao {
     /**
      * Creates an Account (role Customer) and its Customer row in one transaction.
      *
-     * @return the new Customer id, or {@link Constants#NO_ID} if the username is taken or the insert fails.
+     * @return the new Customer id, or {@link Constants#NO_ID} if username/password/fullname is
+     * empty, the username is taken or the insert fails.
      */
     public int registerCustomer(String username, String rawPassword, String fullname,
                                 String phone, String email) {
-        if (isUsernameTaken(username)) {
+        if (isBlank(username) || rawPassword == null || rawPassword.isEmpty() || isBlank(fullname)
+                || isUsernameTaken(username)) {
             return Constants.NO_ID;
         }
         SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -98,6 +100,10 @@ public class AccountDao {
         } finally {
             db.endTransaction();
         }
+    }
+
+    private static boolean isBlank(String s) {
+        return s == null || s.trim().isEmpty();
     }
 
     private static Account fromCursor(Cursor c) {

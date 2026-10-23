@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.group4.fruitshop.data.DatabaseHelper;
@@ -33,10 +34,17 @@ public class FruitDao {
         return dbHelper.getWritableDatabase().insert(TABLE_FRUIT, null, toValues(fruit));
     }
 
-    /** Updates every column of {@code fruit.getId()}. Returns the number of updated rows (1 = success). */
+    /**
+     * Updates every column of {@code fruit.getId()}. Returns the number of updated rows
+     * (1 = success, 0 = not found or invalid values such as a negative quantity).
+     */
     public int update(Fruit fruit) {
-        return dbHelper.getWritableDatabase().update(TABLE_FRUIT, toValues(fruit), FRUIT_ID + " = ?",
-                new String[]{String.valueOf(fruit.getId())});
+        try {
+            return dbHelper.getWritableDatabase().update(TABLE_FRUIT, toValues(fruit),
+                    FRUIT_ID + " = ?", new String[]{String.valueOf(fruit.getId())});
+        } catch (SQLException e) {
+            return 0;
+        }
     }
 
     /** Returns the number of deleted rows (1 = success). */

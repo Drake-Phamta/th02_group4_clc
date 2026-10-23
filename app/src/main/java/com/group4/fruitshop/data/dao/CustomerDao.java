@@ -3,6 +3,7 @@ package com.group4.fruitshop.data.dao;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.group4.fruitshop.data.DatabaseHelper;
@@ -30,14 +31,21 @@ public class CustomerDao {
         return findOne(CUSTOMER_ACCOUNT_ID + " = ?", String.valueOf(accountId));
     }
 
-    /** Updates fullname, phone and email. Returns the number of updated rows (1 = success). */
+    /**
+     * Updates fullname, phone and email. Returns the number of updated rows
+     * (1 = success, 0 = not found or invalid values such as an empty fullname).
+     */
     public int update(Customer customer) {
         ContentValues values = new ContentValues();
         values.put(CUSTOMER_FULLNAME, customer.getFullname());
         values.put(CUSTOMER_PHONE, customer.getPhone());
         values.put(CUSTOMER_EMAIL, customer.getEmail());
-        return dbHelper.getWritableDatabase().update(TABLE_CUSTOMER, values, CUSTOMER_ID + " = ?",
-                new String[]{String.valueOf(customer.getId())});
+        try {
+            return dbHelper.getWritableDatabase().update(TABLE_CUSTOMER, values,
+                    CUSTOMER_ID + " = ?", new String[]{String.valueOf(customer.getId())});
+        } catch (SQLException e) {
+            return 0;
+        }
     }
 
     private Customer findOne(String selection, String arg) {
