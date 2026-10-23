@@ -1,4 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- TV2 @scalliontor: Login / Register / Admin home. Prefix every name with auth_ or admin_home_ -->
 <resources>
+    <!-- Login -->
+    <string name="auth_username_hint">Username</string>
+    <string name="auth_password_hint">Password</string>
+    <string name="auth_remember_me">Remember me</string>
+    <string name="auth_login_button">Login</string>
+    <string name="auth_register_prompt">Don\'t have an account? Register</string>
+    <string name="auth_error_username_required">Username is required</string>
+    <string name="auth_error_password_required">Password is required</string>
+    <string name="auth_error_invalid_credentials">Invalid username or password</string>
+    <string name="auth_error_missing_profile">Customer profile not found</string>
+
+    <!-- Register -->
+    <string name="auth_register_title">Register</string>
+    <string name="auth_fullname_hint">Full name</string>
+    <string name="auth_confirm_password_hint">Confirm password</string>
+    <string name="auth_phone_hint">Phone (optional)</string>
+    <string name="auth_email_hint">Email (optional)</string>
+    <string name="auth_register_button">Register</string>
+    <string name="auth_error_fullname_required">Full name is required</string>
+    <string name="auth_error_username_length">Username must be at least 3 characters</string>
+    <string name="auth_error_username_spaces">Username must not contain spaces</string>
+    <string name="auth_error_username_taken">Username already exists</string>
+    <string name="auth_error_password_length">Password must be at least 6 characters</string>
+    <string name="auth_error_confirm_mismatch">Passwords do not match</string>
+    <string name="auth_error_phone_invalid">Enter a valid phone number</string>
+    <string name="auth_error_email_invalid">Enter a valid email address</string>
+    <string name="auth_register_success">Account created, please log in</string>
+
+    <!-- Admin home -->
+    <string name="admin_home_title">Admin Home</string>
+    <string name="admin_home_welcome">Welcome, %1$s</string>
+    <string name="admin_home_total_fruits">Total fruits</string>
+    <string name="admin_home_expired_fruits">Expired fruits</string>
+    <string name="admin_home_pending_orders">Pending orders</string>
+    <string name="admin_home_fruit_management">Fruit management</string>
+    <string name="admin_home_order_management">Order management</string>
+    <string name="admin_home_logout_title">Logout</string>
+    <string name="admin_home_logout_message">Are you sure you want to logout?</string>
 </resources>
