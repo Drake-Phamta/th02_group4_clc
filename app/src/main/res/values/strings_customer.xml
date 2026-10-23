@@ -1,4 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- TV4 @qkhanhbe: customer screens. Prefix every name with customer_ -->
 <resources>
+    <!-- Customer home (CustomerHomeActivity) -->
+    <string name="customer_home_title">Fruit Shop</string>
+    <string name="customer_greeting">Hello, %1$s</string>
+    <string name="customer_greeting_subtitle">Browse fresh fruits and place your order</string>
+    <string name="customer_search_hint">Search by name or category</string>
+    <string name="customer_hide_expired">Hide expired</string>
+    <plurals name="customer_fruit_count">
+        <item quantity="one">%1$d fruit</item>
+        <item quantity="other">%1$d fruits</item>
+    </plurals>
+    <string name="customer_fruit_empty">No fruits found</string>
+    <string name="customer_fruit_stock">Stock: %1$d</string>
+    <string name="customer_fruit_expiry">Expiry: %1$s</string>
+    <string name="customer_cannot_order">Cannot order</string>
+    <string name="customer_menu_order_history">Order history</string>
+    <string name="customer_logout_title">Logout</string>
+    <string name="customer_logout_message">Do you want to log out?</string>
+
+    <!-- Fruit detail + ordering (FruitDetailActivity) -->
+    <string name="customer_detail_title">Fruit detail</string>
+    <string name="customer_label_category">Category</string>
+    <string name="customer_label_price">Price</string>
+    <string name="customer_label_stock">In stock</string>
+    <string name="customer_label_expiry">Expiry date</string>
+    <string name="customer_label_description">Description</string>
+    <string name="customer_detail_no_description">No description</string>
+    <string name="customer_detail_expiry_value">%1$s (%2$s)</string>
+    <string name="customer_detail_expires_today">last day to order</string>
+    <plurals name="customer_detail_days_left">
+        <item quantity="one">%1$d day left</item>
+        <item quantity="other">%1$d days left</item>
+    </plurals>
+    <string name="customer_label_quantity">Quantity</string>
+    <string name="customer_quantity_minus">−</string>
+    <string name="customer_quantity_plus">+</string>
+    <string name="customer_quantity_decrease">Decrease quantity</string>
+    <string name="customer_quantity_increase">Increase quantity</string>
+    <string name="customer_quantity_range">You can order 1 to %1$d</string>
+    <string name="customer_quantity_max">Only %1$d left in stock</string>
+    <string name="customer_label_total">Total</string>
+    <string name="customer_action_order">Order</string>
+    <string name="customer_detail_out_of_stock">Out of stock</string>
+    <string name="customer_confirm_title">Confirm order</string>
+    <string name="customer_confirm_message">Fruit: %1$s\nQuantity: %2$d\nTotal: %3$s</string>
+
+    <!-- OrderDao.PlaceOrderResult -->
+    <string name="customer_order_success">Order placed successfully (Pending)</string>
+    <string name="customer_order_invalid_quantity">Quantity must be at least 1</string>
+    <string name="customer_order_not_found">This fruit no longer exists</string>
+    <string name="customer_order_expired">This fruit has expired and cannot be ordered</string>
+    <string name="customer_order_out_of_stock">Not enough stock (only %1$d left)</string>
+    <string name="customer_order_failed">Could not place the order, please try again</string>
+
+    <!-- Order history (OrderHistoryActivity) -->
+    <string name="customer_history_title">Order history</string>
+    <plurals name="customer_history_summary">
+        <item quantity="one">%1$d order · Total spent %2$s</item>
+        <item quantity="other">%1$d orders · Total spent %2$s</item>
+    </plurals>
+    <string name="customer_history_empty">You have no orders yet</string>
+    <string name="customer_order_number">Order #%1$d</string>
 </resources>
