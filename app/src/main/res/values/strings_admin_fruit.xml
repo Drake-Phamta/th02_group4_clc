@@ -1,4 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- TV3 @TrungNGD195: admin fruit management. Prefix every name with fruit_ -->
 <resources>
+    <string name="fruit_title">Fruit management</string>
+    <string name="fruit_add_title">Add fruit</string>
+    <string name="fruit_edit_title">Edit fruit</string>
+    <string name="fruit_search_hint">Search by name or category</string>
+    <string name="fruit_filter_all">All (%1$d)</string>
+    <string name="fruit_filter_expired">Expired (%1$d)</string>
+    <string name="fruit_filter_soon">Expiring soon</string>
+    <string name="fruit_filter_soon_count">Expiring soon (%1$d)</string>
+    <string name="fruit_summary">%1$d fruits · %2$d expired</string>
+    <string name="fruit_empty">No fruits found</string>
+    <string name="fruit_add_button_description">Add fruit</string>
+    <string name="fruit_name_hint">Name</string>
+    <string name="fruit_category_hint">Category</string>
+    <string name="fruit_price_hint">Price</string>
+    <string name="fruit_quantity_hint">Quantity</string>
+    <string name="fruit_expiry_hint">Expiry date</string>
+    <string name="fruit_expiry_help">Choose the fruit expiry date.</string>
+    <string name="fruit_past_date_warning">This date is in the past — the fruit will be marked Expired</string>
+    <string name="fruit_description_hint">Description (optional)</string>
+    <string name="fruit_action_save">Save</string>
+    <string name="fruit_action_close">Close</string>
+    <string name="fruit_action_edit">Edit</string>
+    <string name="fruit_action_delete">Delete</string>
+    <string name="fruit_action_cancel">Cancel</string>
+    <string name="fruit_quantity">Quantity: %1$d</string>
+    <string name="fruit_out_of_stock">Out of stock</string>
+    <string name="fruit_expiry_line">Expiry: %1$s</string>
+    <string name="fruit_status_expired">Expired</string>
+    <string name="fruit_status_today">Expires today</string>
+    <string name="fruit_status_days">Expires in %1$d days</string>
+    <string name="fruit_status_fresh">Fresh</string>
+    <string name="fruit_detail_title">Fruit details</string>
+    <string name="fruit_detail_message">Name: %1$s\nCategory: %2$s\nPrice: %3$s\nQuantity: %4$s\nExpiry: %5$s (%6$s)\nDescription: %7$s</string>
+    <string name="fruit_no_description">No description</string>
+    <string name="fruit_delete_title">Delete fruit</string>
+    <string name="fruit_delete_message">Delete %1$s?</string>
+    <string name="fruit_deleted">%1$s deleted</string>
+    <string name="fruit_delete_failed">Could not delete fruit</string>
+    <string name="fruit_not_found">Fruit not found</string>
+    <string name="fruit_added">Fruit added</string>
+    <string name="fruit_updated">Fruit updated</string>
+    <string name="fruit_save_failed">Could not save fruit. Please try again.</string>
+    <string name="fruit_error_name">Name is required</string>
+    <string name="fruit_error_category">Category is required</string>
+    <string name="fruit_error_price">Enter a price greater than 0</string>
+    <string name="fruit_error_quantity">Enter a whole number of 0 or more</string>
+    <string name="fruit_error_expiry">Choose a valid expiry date</string>
 </resources>
