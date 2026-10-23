@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared strings (leader). Module strings live in strings_<module>.xml of each member. -->
+<resources>
+    <string name="app_name">Fruit Shop</string>
+
+    <!-- Common actions -->
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_add">Add</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_close">Close</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_search">Search</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- Expiry badges (ui.common.Badges) -->
+    <string name="expiry_expired">Expired</string>
+    <string name="expiry_today">Expires today</string>
+    <plurals name="expiry_in_days">
+        <item quantity="one">Expires in %d day</item>
+        <item quantity="other">Expires in %d days</item>
+    </plurals>
+    <string name="expiry_fresh">Fresh</string>
+
+    <!-- Placeholder screens (ui.common.StubScreen) -->
+    <string name="stub_owner">Owner: %1$s\nThis screen is a placeholder (stub) until its module is merged.</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_700">#388E3C</color>
+    <color name="green_800">#2E7D32</color>
+    <color name="green_900">#1B5E20</color>
+    <color name="orange_600">#FB8C00</color>
+    <color name="orange_800">#EF6C00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="screen_background">#F4F7F4</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#616161</color>
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Expiry badges -->
+    <color name="status_expired">#D32F2F</color>
+    <color name="status_expiring_soon">#F57C00</color>
+    <color name="status_fresh">#388E3C</color>
+
+    <!-- Order status badges -->
+    <color name="status_pending">#FFA000</color>
+    <color name="status_confirmed">#1976D2</color>
+    <color name="status_completed">#388E3C</color>
+
+    <color name="launcher_background">#2E7D32</color>
+</resources>

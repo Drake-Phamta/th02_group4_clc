@@ -1,0 +1,26 @@
+# Leader owns everything by default (core, build config, manifest, shared resources, docs)
+*                                                               @Drake-Phamta
+
+# TV2 - authentication + admin home
+/app/src/main/java/com/group4/fruitshop/ui/auth/                @scalliontor
+/app/src/main/java/com/group4/fruitshop/ui/admin/AdminHomeActivity.java  @scalliontor
+/app/src/main/res/layout/activity_login.xml                     @scalliontor
+/app/src/main/res/layout/activity_register.xml                  @scalliontor
+/app/src/main/res/layout/activity_admin_home.xml                @scalliontor
+/app/src/main/res/values/strings_auth.xml                       @scalliontor
+
+# TV3 - admin fruit management
+/app/src/main/java/com/group4/fruitshop/ui/admin/fruit/         @TrungNGD195
+/app/src/main/res/layout/activity_fruit_management.xml          @TrungNGD195
+/app/src/main/res/layout/activity_fruit_form.xml                @TrungNGD195
+/app/src/main/res/layout/item_admin_fruit.xml                   @TrungNGD195
+/app/src/main/res/values/strings_admin_fruit.xml                @TrungNGD195
+
+# TV4 - customer
+/app/src/main/java/com/group4/fruitshop/ui/customer/            @qkhanhbe
+/app/src/main/res/layout/activity_customer_home.xml             @qkhanhbe
+/app/src/main/res/layout/item_customer_fruit.xml                @qkhanhbe
+/app/src/main/res/layout/activity_fruit_detail.xml              @qkhanhbe
+/app/src/main/res/layout/activity_order_history.xml             @qkhanhbe
+/app/src/main/res/layout/item_order_history.xml                 @qkhanhbe
+/app/src/main/res/values/strings_customer.xml                   @qkhanhbe

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TV1 @Drake-Phamta: admin order management. Prefix: order_ -->
+<resources>
+    <string name="order_title">Order management</string>
+    <string name="order_filter_all">All (%1$d)</string>
+    <string name="order_filter_pending">Pending (%1$d)</string>
+    <string name="order_filter_confirmed">Confirmed (%1$d)</string>
+    <string name="order_filter_completed">Completed (%1$d)</string>
+    <plurals name="order_summary">
+        <item quantity="one">%1$d order · Total %2$s</item>
+        <item quantity="other">%1$d orders · Total %2$s</item>
+    </plurals>
+    <string name="order_empty">No orders in this status</string>
+    <string name="order_number">Order #%1$d</string>
+    <string name="order_customer">%1$s · %2$s</string>
+    <string name="order_action_confirm">Confirm order</string>
+    <string name="order_action_complete">Mark completed</string>
+    <string name="order_update_title">Update order status</string>
+    <string name="order_update_message">Change order #%1$d from %2$s to %3$s?</string>
+    <string name="order_updated">Order #%1$d is now %2$s</string>
+    <string name="order_update_failed">Could not update the order status</string>
+</resources>
